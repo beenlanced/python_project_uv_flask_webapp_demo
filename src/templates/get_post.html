@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+	<title>Handling of Get and Post Requests</title>
+	<style>
+		div {
+			width: 400px;
+			border: 1px solid rgb(74, 171, 241);
+			padding: 10px;
+			margin-bottom: 5px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div>
+		<h1>How to Handle Get Request</h1>
+		<form method="GET"
+			action="{{ url_for('requests.handle_get') }}">
+			<input type="number"
+				name="user_id"
+				placeholder="user_id">
+			<input type="text"
+				name="name"
+				placeholder="name">
+			<input type="text"
+				name="email"
+				placeholder="email">
+			<button type="submit">submit</button>
+		</form>
+	</div>
+
+	<div>
+		<h1>How to Handle POST Request</h1>
+		<form method="POST"
+			action="{{ url_for('posts.handle_post') }}">
+			<input type="number"
+				name="user_id"
+				placeholder="user_id">
+            <input type="text"
+				name="name"
+				placeholder="name">
+			<input type="text"
+				name="email"
+				placeholder="email">
+			<button type="submit">submit</button>
+		</form>
+	</div>
+</body>
+
+</html>
