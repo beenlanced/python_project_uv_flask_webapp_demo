@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        python-version: [3.13]
+        python-version: ["3.13"]
 
     # Secrets/env variables go here - read from github secrets
     env:
@@ -21,7 +21,7 @@ jobs:
     steps:
       # Step 1: Check out the code from the repository
       - name: Checkout repository code
-        uses: actions/checkou@v4
+        uses: actions/checkout@v4
 
       # Step 2: Set up Python environment
       - name: Set up Python
