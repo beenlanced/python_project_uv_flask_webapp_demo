@@ -1,8 +1,8 @@
 """
 Custom Exceptions 
 
-Used Here to show where and How we might create custom exceptions. 
-Note these are merely exemplary examples.
+Used here to show where and How we might create custom exceptions. 
+Note, these are merely exemplary examples.
 """
 
 
