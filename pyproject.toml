@@ -19,6 +19,9 @@ dev = [
     "pytest-mock>=3.14.0",
 ]
 
+[project.optional-dependencies]
+ci = ["pytest", "pytest-cov"]
+
 [tool.setuptools.packages.find]
 where = ["."]
 
