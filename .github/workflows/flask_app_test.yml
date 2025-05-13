@@ -33,7 +33,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pytest
+          pip install .[dev]
 
       # Step 4: Add any debugging information we want to see
       - name: Print debugging information
