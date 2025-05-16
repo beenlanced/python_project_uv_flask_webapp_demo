@@ -6,7 +6,7 @@
 # URL: https://www.geeksforgeeks.org/flask-http-methods-handle-get-post-requests/
 # Date Accessed: May 3, 2025
 # Source: GeeksforGeeks.
-import logging 
+import logging
 from pathlib import Path
 
 from typing import Hashable, Tuple
