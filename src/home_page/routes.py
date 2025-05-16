@@ -1,6 +1,9 @@
-from flask import Blueprint, render_template
-from src.utils.setup_logging import logger
+import logging
 
+from flask import Blueprint, render_template
+
+
+logger = logging.getLogger(__name__)
 
 home_page = Blueprint("home_page", __name__)
 
@@ -17,7 +20,7 @@ def home() -> str:
     """
     Route function that returns either a string or status code
     """
-    logger.info("The home route accessed")
+    logger.info("The /home route accessed")
     return render_template("home.html")
 
 @home_page.route("/favicon.ico", methods=["GET"])

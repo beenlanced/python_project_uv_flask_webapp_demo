@@ -66,6 +66,9 @@
         "handlers": [
           "queue_handler"
         ]
+      },
+      "app":{
+        "level": "DEBUG"
       }
     }
   }

@@ -1,4 +1,4 @@
-import os
+import logging
 from typing import Type
 
 from dotenv import load_dotenv
@@ -8,11 +8,8 @@ from configs.app_config import DevelopmentConfig
 from src.home_page.routes import home_page
 from src.posts.routes import posts
 from src.requests.routes import requests
-from src.utils.setup_logging import setup_logging, logger
+from configs.logging_configs.setup_logging import configure_loggers
 
-#Load environment varables from the .env file (if present)
-load_dotenv()
-logger.info(f"Retrieved environmental variable: {os.environ.get("EXAMPLE_ENVIRONMENT_VARIABLE")} from .env file")
 
 def create_app(config_class: Type[DevelopmentConfig] = DevelopmentConfig) -> Flask:
     """
@@ -33,13 +30,20 @@ def create_app(config_class: Type[DevelopmentConfig] = DevelopmentConfig) -> Fla
     app.register_blueprint(home_page)
     app.register_blueprint(posts)
     app.register_blueprint(requests)
-
-    #Set up logging
-    setup_logging(app)
     return app
 
-app = create_app()
-logger.info("Flask application instance created")
+def main():
+    configure_loggers()
+    logger = logging.getLogger("app")
+    logger.info("Starting the Flask application!")
+    
+    #Load environment varables from the .env file (if present)
+    load_dotenv()
+    logger.info("Retrieved environmental variable(s) from .env file using: %s", 'os.environ.get("EXAMPLE_ENVIRONMENT_VARIABLE")')
+
+    app = create_app()
+    logger.info("Flask application instance created")
+    app.run(debug=True)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    main()

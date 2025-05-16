@@ -5,27 +5,18 @@ import logging.config
 
 from pathlib import Path
 
-from flask import Flask
 
 
-logger = logging.getLogger("flask_app_logger")
-
-def setup_logging(app: Flask) -> None:
+def configure_loggers() -> None:
     """
-    Configure logging for the Flask application
-
-    Args:
-        app (Flask): Flask application. 
-
-    Returns:
-       logger object for this Flask Application
+    Configure loggers for the Flask application
     """
     json_config_path =  Path(__file__).resolve().parent.parent.parent /"configs/logging_configs"
     json_config_path = json_config_path if json_config_path.is_absolute() else Path(json_config_path.resolve())
     json_config_file = list(json_config_path.glob("*.json", case_sensitive=False))[0]
 
-    with open(json_config_file) as f_in:
-        config = json.load(f_in)
+    with open(json_config_file) as f:
+        config = json.load(f)
     
     logging.config.dictConfig(config)
     queue_handler = logging.getHandlerByName("queue_handler")
