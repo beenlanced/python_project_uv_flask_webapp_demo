@@ -1,10 +1,11 @@
+import logging
 from typing import Hashable
 
 import pandas as pd
 from pandas.errors import EmptyDataError
 
-from src.utils.setup_logging import logger
 
+logger = logging.getLogger("__name__")
 
 def get_data(file_path: str) -> dict[Hashable, str]:
     """
@@ -32,14 +33,14 @@ def get_data(file_path: str) -> dict[Hashable, str]:
         logger.info("CSV data file was converted to a dictionary")
         return df.to_dict('records')[0]
     except FileNotFoundError as e:
-        logger.error(f"Error: File not found at {file_path} - {e}", exc_info=True)
+        logger.exception("Error: File not found at %s - %s", file_path, e)
         raise
         return None
     except EmptyDataError as e:
-        logger.error(f"File is empty at {file_path} - {e}", exc_info=True)
+        logger.exception("File is empty at %s - %s", file_path, e)
         raise
         return None
     except Exception as e:
-        logger.error(f"ERROR: An unexpected error occurred: {e}", exc_info=True)
+        logger.exception("ERROR: An unexpected error occurred: %s", e)
         raise
         return None
