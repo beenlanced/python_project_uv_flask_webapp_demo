@@ -3,13 +3,15 @@
 # Date Accessed: May 2, 2025
 # Source: Tech with Tim.
 # https://flask.palletsprojects.com/en/stable/tutorial/tests/
+import logging
 from pathlib import Path
 from typing import Hashable, Tuple
 
 from flask import Blueprint, jsonify, render_template, Response,request
 from src.get_data import get_data
-from src.utils.setup_logging import logger
 
+
+logger = logging.getLogger(__name__)
 
 data_dir_path =  Path(__file__).resolve().parent.parent.parent /"data"
 data_dir_path = data_dir_path if data_dir_path.is_absolute() else Path(data_dir_path.resolve())
