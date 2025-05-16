@@ -30,9 +30,6 @@ def create_app(config_class: Type[DevelopmentConfig] = DevelopmentConfig) -> Fla
     app.register_blueprint(home_page)
     app.register_blueprint(posts)
     app.register_blueprint(requests)
-
-    #Set up logging
-    #setup_logging(app)
     return app
 
 def main():
