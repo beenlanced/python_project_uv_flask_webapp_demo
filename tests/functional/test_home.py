@@ -7,7 +7,7 @@ def test_logging_configuration(client: Flask) -> None:
     WHEN the '/' page is requested (GET)
     THEN check that logs are being written to
     """
-    assert "flask_app_logger" in open("logs/flask_app_log.jsonl").read()
+    assert "app" in open("logs/flask_app_log.jsonl").read()
 
 def test_landing_page(client: Flask) -> None:
     """
