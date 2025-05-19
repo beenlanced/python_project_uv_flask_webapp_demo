@@ -16,7 +16,7 @@ def create_app(config_class: Type[DevelopmentConfig] = DevelopmentConfig) -> Fla
     Create a configured Flask application object.
 
     Args:
-        config_class (Type[DevelopmentConfig]): User defined subclass, DevelopmentConfig of 
+        config_class (Type[DevelopmentConfig]): User defined subclass, DevelopmentConfig of
             Configuration class containing app configuration. Default value set to DevelopmentConfig.
 
     Returns:
@@ -36,14 +36,14 @@ def main():
     configure_loggers()
     logger = logging.getLogger("app")
     logger.info("Starting the Flask application!")
-    
+
     #Load environment varables from the .env file (if present)
     load_dotenv()
     logger.info("Retrieved environmental variable(s) from .env file using: %s", 'os.environ.get("EXAMPLE_ENVIRONMENT_VARIABLE")')
 
     app = create_app()
     logger.info("Flask application instance created")
-    app.run(debug=True)
+    app.run(debug=True, port=5001, host="0.0.0.0")
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,9 @@
+#version of the Docker Compost File Format
+services:
+  flask-app:
+    # Build the image from the Dockerfile in the current directory `.`
+    build: .
+
+    # Host the Flask application on Port 5001
+    ports:
+      - "5001:5001"

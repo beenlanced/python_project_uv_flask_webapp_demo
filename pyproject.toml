@@ -26,4 +26,4 @@ ci = ["pytest", "pytest-cov"]
 where = ["."]
 
 [project.scripts]
-flask_app = "src.__main__:main"
+flask_app = "src.app:main"

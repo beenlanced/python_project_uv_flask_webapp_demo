@@ -24,7 +24,6 @@ class DataIngestionError(Exception):
 
 class SourceDataFileEmptyError(DataIngestionError):
     """Raised when a source data file is present, but is empty. """
-
     def __init__(self, message: str, filename: str) -> None:
         super().__init__(message)
         self.filename = filename
