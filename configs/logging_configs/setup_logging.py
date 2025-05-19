@@ -11,7 +11,7 @@ def configure_loggers() -> None:
     """
     Configure loggers for the Flask application
     """
-    #Get json logger configuration file 
+    #Get json logger configuration file
     app_base_path = str(Path(__file__).resolve().parent.parent.parent)
     json_config_file = os.path.join(app_base_path, "configs/logging_configs/logger_configure.json")
 
@@ -26,5 +26,5 @@ def configure_loggers() -> None:
     if queue_handler is not None:
         queue_handler.listener.start()
         atexit.register(queue_handler.listener.stop)
-    
+
     return None
