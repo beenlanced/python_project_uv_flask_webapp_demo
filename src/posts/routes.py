@@ -73,15 +73,15 @@ def handle_post(user_data: dict[Hashable, str] = user_data) -> str:
         dict: the user data from this simple example
 
     Examples:
-        Via GUI Interface (http://127.0.0.1:5000/) enter the following values for each field:
+        Via GUI Interface (http://127.0.0.1:5001/) enter the following values for each field:
         >>> user_id: 100
         >>> name: john doe
         >>> email: john.doe@example.com
         Sorry, User already Exists.
 
-        Via GUI Interface (http://127.0.0.1:5000/) enter the following values for each field:
-        >>> user_id: 100
-        >>> name: john doe
+        Via GUI Interface (http://127.0.0.1:5001/) enter the following values for each field:
+        >>> user_id: 200
+        >>> name: jane doe
         >>> email: jane.doe@example.com
         Email is available. Welcome New User!
     """
