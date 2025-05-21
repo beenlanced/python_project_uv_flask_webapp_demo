@@ -1,4 +1,4 @@
-# Demo UV Application - An Example for How to Build Smart Python Projects using UV.
+# Demo UV Application - An Example for How to Build Smart Python Projects Using UV.
 
 <div align="center">
     <img alt="Transaction Fraud Detection" src="./imgs/workflow.jpg" width="100%" height="300">
@@ -7,12 +7,13 @@
 <br>
 
 ![Code Coverage](https://img.shields.io/badge/coverage-100%25-green)
+[![Flask App Tests](https://github.com/beenlanced/python_project_uv_flask_webapp_demo/actions/workflows/flask_app_test.yml/badge.svg)](https://github.com/beenlanced/python_project_uv_flask_webapp_demo/actions/workflows/flask_app_test.yml)
 
 ---
 
 ## Project Description
 
-This is a web application built using Python and Flask. I know, I know, `YAFP`, Yet Another Flask Application. Wait, wait! There is more here than meets the eye with this project. It's an end-to-end Continous Integration / Continous Deployment (CI/CD) project constructed using the `uv` package manager. While the web application is simple, the complexity of the project structure and its contents are the real payoff. If you have been asking, "Where can I find a single project that exemplifies proper structure, run tests, build log files, and shows me how to perform continuous integration and deployment of code updates (here as docker images)? Then, this endeavor is for you.
+This is a web application built using Python and Flask. I know, I know, `YAFP`, Yet Another Flask Application. Wait, wait! There is more here than meets the eye with this project. It's an end-to-end Continous Integration / Continous Deployment (CI/CD) project constructed using the `uv` package manager. While the web application is simple, the complexity of the project structure and its contents are the real payoff. If you have been asking, "Where can I find a single project that exemplifies proper structure, runs unit and funtional tests, builds log files, and shows me how to perform continuous integration and deployment of code updates (here as docker images)? Then, this endeavor is for you.
 
 ---
 
