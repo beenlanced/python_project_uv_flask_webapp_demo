@@ -233,7 +233,7 @@ The project is full of insights.
 
 ### Final Words
 
-Thanks for visting.
+Thanks for visiting.
 
 Give the project a star (⭐) if you liked it or if it was helpful to you!
 
@@ -245,7 +245,7 @@ You've `beenlanced`! 😉
 
 I would like to extend my gratitude to all the individuals and organizations who helped in the development and success of this project. Your support, whether through contributions, inspiration, or encouragement, have been invaluable. Thank you.
 
-Specifically, I would like to acknowlege:
+Specifically, I would like to acknowledge:
 
 - [Hema Kalyan Murapaka](https://www.linkedin.com/in/hemakalyan) and [Benito Martin](https://martindatasol.com/blog) for sharing their README.md templates upon which I have derieved my README.md.
 
