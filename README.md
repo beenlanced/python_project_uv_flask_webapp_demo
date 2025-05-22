@@ -1,7 +1,7 @@
 # Demo UV Application - An Example for How to Build Smart Python Projects Using UV.
 
 <div align="center">
-    <img alt="Transaction Fraud Detection" src="./imgs/workflow.jpg" width="100%" height="300">
+    <img alt="Project Workflow" src="./imgs/workflow.jpg" width="100%" height="300">
 </div>
 
 <br>
