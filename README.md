@@ -247,7 +247,7 @@ I would like to extend my gratitude to all the individuals and organizations who
 
 Specifically, I would like to acknowledge:
 
-- [Hema Kalyan Murapaka](https://www.linkedin.com/in/hemakalyan) and [Benito Martin](https://martindatasol.com/blog) for sharing their README.md templates upon which I have derieved my README.md.
+- [Hema Kalyan Murapaka](https://www.linkedin.com/in/hemakalyan) and [Benito Martin](https://martindatasol.com/blog) for sharing their README.md templates upon which I have derived my README.md.
 
 - The folks at Astral for their UV [documentation](https://docs.astral.sh/uv/)
 
