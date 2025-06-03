@@ -22,7 +22,7 @@ This is a web application built using Python and Flask. I know, I know, `Y`et `A
 The project uses the well-known `source (SRC)` layout structure. It contains the key elements:
 
 - `CI/CD` automated pipeline created using `GitHub Actions`,
-- `Docker`. Application code is containerized so it can be deployed just as easily to a user's host machine or to the cloud. It uses a Dockerfile which that employs a multi-stage docker build using `uv`,
+- `Docker`. Application code is containerized so it can be deployed just as easily to a user's host machine or to the cloud. It uses a Dockerfile that employs a multi-stage docker build using `uv`,
 - `Custom Exceptions` for when you want to create your own unique error messages,
 - `Environment` variable usage,
 - `Functional tests` and `unit tests` using `pytest`,
